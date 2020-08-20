@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Realtime Database Demo</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBjrzjEAKhYkb79PyETHbZEG947986Yg5g",
+            authDomain: "fir-db-implementation.firebaseapp.com",
+            databaseURL: "https://fir-db-implementation.firebaseio.com",
+            projectId: "fir-db-implementation",
+            storageBucket: "fir-db-implementation.appspot.com",
+            messagingSenderId: "934644234159",
+            appId: "1:934644234159:web:5ad534900b27a6c891615a",
+            measurementId: "G-JM1B138WKK"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="Roll">Roll no</label>
+        <input type="number" id="rollno" name="Roll"><br><br>
+        <button onclick="saveData()"> Save Data </button>
+
+    </div>
+
+    <script type="text/javascript" src="./app.js"></script>
+
+</body>
+
+</html>
